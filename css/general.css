@@ -280,10 +280,12 @@ img
 
 .case
 {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	display: flex;
 	flex-flow: column nowrap;
-    margin-bottom: 155px;
+
+	margin-bottom: 155px;
+
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .case_header
@@ -339,14 +341,14 @@ img
 {
 	max-width: 300px;
 	height: fit-content;
+	margin-top: 45px;
 	margin-right: 55px;
-    margin-top: 45px;
 }
 
 .case_text
 {
+	margin-top: 20px;
 	padding-right: 25px;
-    margin-top: 20px;
 }
 
 .case_text li
@@ -404,4 +406,126 @@ img
 	content: "⬤";
 
 	color: #320B61;
+}
+
+.section_three
+{
+	background-color: #42196D;
+}
+
+.section_three h2
+{
+	font-family: "Gilroy Bold";
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 44px;
+
+	margin-top: 90px;
+	padding-bottom: 60px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FAD264;
+}
+
+.section_three hr
+{
+	width: 83px;
+	height: 0px;
+	margin: 0 auto;
+
+	border: 2px solid #FFFFFF;
+}
+
+.marathons
+{
+	display: flex;
+	flex-flow: row nowrap;
+
+	margin-top: 65px;
+	margin-bottom: 55px;
+}
+
+.marathon
+{
+	font-size: 18px;
+	line-height: 22px;
+
+	display: flex;
+	flex-flow: column nowrap;
+	flex-grow: 1;
+
+	margin: 0 15px;
+
+	text-align: center;
+}
+
+.marathon img
+{
+	max-height: 240px;
+	margin-bottom: 25px;
+
+	object-fit: cover;
+}
+
+.marathon .border
+{
+	display: flex;
+	flex-flow: column nowrap;
+
+	min-height: 500px;
+	padding-bottom: 15px;
+
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	background-color: #FFFFFF;
+}
+
+.marathon .border p
+{
+	flex-grow: 1;
+
+	padding: 10px 15px;
+}
+
+.marathon_text
+{
+	color: #FFFFFF;
+}
+
+.marathon_text p
+{
+	margin: 25px 0;
+}
+
+.marathon_text ul
+{
+	margin-left: 45px;
+
+	list-style-type: none;
+}
+
+.marathon_text ul li
+{
+	position: relative;
+
+	margin: 25px 0;
+
+	text-align: left;
+}
+
+.marathon_text ul li:after
+{
+	position: absolute;
+	top: -2px;
+	left: -45px;
+
+	width: 30px;
+	height: 30px;
+
+	content: "";
+
+	background-image: url("./../img/star2.png");
+	background-size: contain;
 }

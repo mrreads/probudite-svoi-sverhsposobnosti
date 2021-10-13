@@ -1,3 +1,32 @@
+@media screen and (max-width: 1200px)
+{
+	.marathons
+	{
+		flex-flow: row wrap;
+	}
+	.marathon
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 25px;
+	}
+	.marathon_text
+	{
+		max-width: 786px;
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+	.marathon .border
+	{
+		min-height: unset;
+		padding-bottom: 25px;
+	}
+	.marathon img
+	{
+		max-height: 220px;
+	}
+}
+
 @media screen and (max-width: 1024px)
 {
 	.section_one .header
@@ -51,13 +80,21 @@
 	{
 		margin-left: 30px;
 	}
-	.case_text ul:last-child
+	.case_text ul:last-child, .marathon_text ul
 	{
 		margin-left: 30px;
 	}
 	.case_text ul:last-child li:after
 	{
 		left: -30px;
+	}
+	.marathon img
+	{
+		max-height: 190px;
+	}
+	.marathon_text ul li
+	{
+		margin: 20px 0;
 	}
 }
 
@@ -76,13 +113,23 @@
 		font-size: 14px;
 		line-height: 18px;
 	}
-	.case_text ul:first-child li:after
+	.case_text ul:first-child li:after, .marathon_text ul li:after
 	{
 		top: -1px;
 		left: -35px;
 
 		width: 25px;
 		height: 25px;
+	}
+	.marathon_text
+	{
+		max-width: 786px;
+		margin: 0 auto;
+		padding: 0 25px;
+	}
+	.marathon img
+	{
+		max-height: 180px;
 	}
 }
 
@@ -150,6 +197,18 @@
 	{
 		font-size: 16px;
 	}
+	.marathon
+	{
+		font-size: 16px;
+	}
+	.marathon img
+	{
+		max-height: 170px;
+	}
+	.marathon_text
+	{
+		padding: 0 10px;
+	}
 }
 
 @media screen and (max-width: 425px)
@@ -195,12 +254,26 @@
 	{
 		padding: 0 15px;
 	}
-	.case_text ul:first-child li:after
+	.case_text ul:first-child li:after, .marathon_text ul li:after
 	{
 		top: 5px;
 		left: -35px;
 
 		width: 20px;
 		height: 20px;
+	}
+	.marathon_text
+	{
+		max-width: 786px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+	.marathon
+	{
+		font-size: 14px;
+	}
+	.marathon img
+	{
+		max-height: 160px;
 	}
 }
