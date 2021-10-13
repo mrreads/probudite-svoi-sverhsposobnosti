@@ -494,6 +494,8 @@ img
 
 .marathon .border
 {
+	position: relative;
+
 	display: flex;
 	flex-flow: column nowrap;
 
@@ -503,6 +505,23 @@ img
 	border-bottom-right-radius: 40px;
 	border-bottom-left-radius: 40px;
 	background-color: #FFFFFF;
+}
+
+.marathon .border::after
+{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+
+	width: 47px;
+	height: 30px;
+
+	content: "";
+	transform: translate(-50%, 50%);
+
+	background-image: url("./../img/arrow2.png");
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .marathon .border p
