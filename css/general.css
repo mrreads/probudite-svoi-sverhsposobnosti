@@ -345,8 +345,10 @@ img
 
 .case_text
 {
+	padding-right: 25px;
     margin-top: 20px;
 }
+
 .case_text li
 {
 	margin: 30px 0;
