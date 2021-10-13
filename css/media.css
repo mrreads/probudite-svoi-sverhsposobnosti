@@ -25,6 +25,47 @@
 	{
 		max-height: 220px;
 	}
+	.progress-bar
+	{
+		flex-flow: column nowrap;
+	}
+	.progress:nth-child(1)
+	{
+		width: calc(100% - 160px);
+	}
+	.progress:nth-child(2)
+	{
+		width: calc(100% - 120px);
+	}
+	.progress:nth-child(3)
+	{
+		width: calc(100% - 80px);
+	}
+	.progress:nth-child(4)
+	{
+		width: calc(100% - 55px);
+	}
+	.progress:nth-child(5)
+	{
+		width: 100%;
+	}
+	.progress:nth-child(n) p
+	{
+		margin-top: 5px;
+		margin-bottom: 25px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.progress .nubmer
+	{
+		justify-content: flex-start;
+
+		height: 80px;
+		padding-left: 43px;
+
+		background-position: 20px center;
+		background-size: 60px;
+	}
 }
 
 @media screen and (max-width: 1024px)
@@ -96,6 +137,15 @@
 	{
 		margin: 20px 0;
 	}
+	.progress:not(:last-child) .nubmer::before
+	{
+		width: 53px;
+		height: calc(100% + 15px);
+	}
+	.progress:not(:last-child) .nubmer::after
+	{
+		width: 40px;
+	}
 }
 
 @media screen and (max-width: 768px)
@@ -139,6 +189,29 @@
 	{
 		font-size: 26px;
 	}
+	.section_four .progress p
+	{
+		font-size: 18px;
+		line-height: 23px;
+	}
+	.progress:nth-child(n)
+	{
+		width: calc(100% - 35px);
+	}
+	.progress:last-child
+	{
+		width: 100%;
+	}
+	.progress .nubmer
+	{
+		justify-content: flex-start;
+
+		height: 70px;
+		padding-left: 39px;
+
+		background-position: 20px center;
+		background-size: 50px;
+	}
 }
 
 @media screen and (max-width: 625px)
@@ -165,11 +238,11 @@
 	{
 		flex-flow: column wrap;
 	}
-	.buttons a
+	.buttons a, .buttons input
 	{
 		margin: 0;
 	}
-	.buttons a:first-child
+	.buttons a:first-child, .buttons input:first-child
 	{
 		margin-bottom: 35px;
 	}
@@ -222,6 +295,10 @@
 		font-size: 23px;
 		line-height: 28px;
 	}
+	.section_four .progress p
+	{
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 425px)
@@ -238,7 +315,7 @@
 	{
 		width: 100%;
 	}
-	.buttons a
+	.buttons a, .buttons input
 	{
 		max-width: 100%;
 	}
@@ -292,5 +369,15 @@
 	.section_four p
 	{
 		font-size: 18px;
+	}
+	.progress .nubmer
+	{
+		justify-content: flex-start;
+
+		height: 50px;
+		padding-left: 38px;
+
+		background-position: 20px center;
+		background-size: 50px;
 	}
 }
