@@ -131,6 +131,14 @@
 	{
 		max-height: 180px;
 	}
+	.section_three h2
+	{
+		font-size: 28px;
+	}
+	.section_four p
+	{
+		font-size: 26px;
+	}
 }
 
 @media screen and (max-width: 625px)
@@ -140,7 +148,7 @@
 		font-size: 14px;
 		line-height: 16px;
 	}
-	.section_one h1
+	.section_one h1, .section_two h2, .section_three h2, .section_four h2
 	{
 		font-size: 30px;
 		line-height: 36px;
@@ -209,6 +217,11 @@
 	{
 		padding: 0 10px;
 	}
+	.section_four p
+	{
+		font-size: 23px;
+		line-height: 28px;
+	}
 }
 
 @media screen and (max-width: 425px)
@@ -275,5 +288,9 @@
 	.marathon img
 	{
 		max-height: 160px;
+	}
+	.section_four p
+	{
+		font-size: 18px;
 	}
 }

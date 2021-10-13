@@ -529,3 +529,201 @@ img
 	background-image: url("./../img/star2.png");
 	background-size: contain;
 }
+
+.section_four
+{
+	color: #000000;
+	background: #F7F7F7;
+}
+
+.section_four h2
+{
+	font-family: "Gilroy Bold";
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 44px;
+
+	margin-top: 90px;
+	padding-bottom: 60px;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #320B61;
+}
+
+.section_four hr
+{
+	width: 83px;
+	height: 0px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+	border: 2px solid #E130E3;
+}
+
+.section_four p
+{
+	font-size: 36px;
+	line-height: 42px;
+
+	margin-bottom: 90px;
+
+	text-align: center;
+
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.progress-bar
+{
+	display: flex;
+	overflow-x: scroll;
+	flex-flow: row nowrap;
+
+	scroll-snap-type: x mandatory;
+}
+
+.progress-bar p
+{
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 26px;
+
+	margin-top: 30px;
+
+	text-align: left;
+}
+
+.progress
+{
+	scroll-snap-align: start;
+}
+
+.progress .nubmer
+{
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 30px;
+
+	position: relative;
+
+	display: flex;
+	display: flex;
+	align-items: center;
+	align-items: center;
+	justify-content: center;
+
+	min-width: 220px;
+	height: 115px;
+
+	text-align: center;
+	letter-spacing: 0.04em;
+
+	color: #FAD264;
+	background-image: url("./../img/circle.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.progress:nth-child(1) .nubmer
+{
+	z-index: 5;
+
+	background-color: #312D48;
+}
+
+.progress:nth-child(2) .nubmer
+{
+	z-index: 4;
+
+	background-color: #4E3D71;
+}
+
+.progress:nth-child(3) .nubmer
+{
+	z-index: 3;
+
+	background-color: #8E67C0;
+}
+
+.progress:nth-child(4) .nubmer
+{
+	z-index: 2;
+
+	background-color: #B967C0;
+}
+
+.progress:nth-child(5) .nubmer
+{
+	z-index: 1;
+
+	background-color: #ED867A;
+}
+
+.progress:not(:last-child) .nubmer::after
+{
+	position: absolute;
+	z-index: inherit;
+	top: 0px;
+	right: 2px;
+
+	width: 65px;
+	height: 100%;
+
+	content: "";
+	transform: translate(95%, 0);
+
+	background-color: inherit;
+
+	clip-path: polygon(55% 50%, 0 0, 0 100%);
+}
+
+
+.progress:not(:last-child) .nubmer::before
+{
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	right: 0px;
+
+	width: 80px;
+	height: calc(100% + 25px);
+
+	content: "";
+	transform: translate(95%, -50%);
+
+	background-color: #FFFFFF;
+
+	clip-path: polygon(55% 50%, 0 0, 0 100%);
+}
+
+
+.progress:nth-child(1) p
+{
+	padding-right: 45px;
+}
+
+.progress:nth-child(2) p
+{
+	padding-right: 75px;
+	padding-left: 10px;
+}
+
+.progress:nth-child(3) p
+{
+	padding: 0 30px;
+	padding-left: 45px;
+}
+
+.progress:nth-child(4) p
+{
+	padding-right: 10px;
+	padding-left: 45px;
+}
+
+.progress:nth-child(5) p
+{
+	padding-left: 65px;
+}
